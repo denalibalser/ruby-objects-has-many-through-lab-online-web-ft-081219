@@ -12,4 +12,12 @@ class Genre
     @@all
   end
 
+  def songs 
+    Song.all.search{|song| song.genre == self}
+  end 
+
+  def artists
+    self.all.map{|genre| genre.artist == self}
+  end 
+
 end
