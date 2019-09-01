@@ -14,11 +14,11 @@ class Artist
 
   def songs
     Song.all.search{|song| song.artist == self}
-  end 
+  end
 
   def new_song(name, genre)
   end  
-    
+
 
 
 
