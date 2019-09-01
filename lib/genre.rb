@@ -19,7 +19,7 @@ class Genre
   end
 
   def artists
-    self.all.map{|genre| genre.artist == self}
+    songs.map{|genre| genre.artist == self}
   end
 
 end
