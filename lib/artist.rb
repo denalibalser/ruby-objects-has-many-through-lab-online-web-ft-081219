@@ -12,5 +12,10 @@ class Artist
     @@all
   end
 
+  def songs 
+    Song.all.search{|song| song.artist == self} 
+  end 
+      
+
 
 end
